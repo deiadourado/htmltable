@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/bg.png');
+    /*background-image: url('../img/bg.png');*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -33,4 +33,10 @@ table {
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+
+footer {
+    background-color: lightcoral;
+    color: black;
+    position: inherit;
+}
   
