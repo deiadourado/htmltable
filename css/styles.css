@@ -1,9 +1,23 @@
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 h1 {
     text-shadow: 2px 2px 5px red;
     font-family: "Sofia", sans-serif;
     font-size: 50px;
     text-align: center;
+    animation: heartbeat 1s infinite; /* Aplica a animação ao h1 */
 }
+
 
 p {
     text-align: center;
