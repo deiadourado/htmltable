@@ -3,55 +3,6 @@ h1 {
     font-family: "Sofia", sans-serif;
     font-size: 50px;
     text-align: center;
-  }
-
-p{
-    text-align: center;
-}
-
-.audio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; 
-    margin-top: 20px;
-}
-
-
-body {
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    color: #333;
-    font-family: Arial, sans-serif;
-  }
-
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 50%;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  tr:hover {
-    background-color: #f5f5f5;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-
-  h1 {
-    text-shadow: 2px 2px 5px red;
-    font-family: "Sofia", sans-serif;
-    font-size: 50px;
-    text-align: center;
 }
 
 p {
@@ -66,7 +17,6 @@ p {
 }
 
 body {
-    /*background-image: url('../img/bg.png');*/
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
     background-position: center;
     background-repeat: no-repeat;
@@ -74,16 +24,6 @@ body {
     color: #333;
     font-family: Arial, sans-serif;
 }
-
-/* Uncomment this section if you plan to use .container */
-/*
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-*/
 
 table {
     margin: 0 auto;
@@ -109,9 +49,6 @@ footer {
     text-align: center;
     background-color: lightcoral;
     color: black;
-    position: fixed;
-    bottom: 0; /* Ensures the footer stays at the bottom */
-    width: 100%; /* Makes the footer full-width */
+    position: relative;
+    width: 100%;
 }
-
-  
