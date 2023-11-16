@@ -1,3 +1,4 @@
+/* Keyframe animation for heartbeat effect */
 @keyframes heartbeat {
     0% {
         transform: scale(1);
@@ -10,59 +11,102 @@
     }
 }
 
-h1 {
-    text-shadow: 2px 2px 5px red;
-    font-family: "Sofia", sans-serif;
-    font-size: 50px;
-    text-align: center;
-    animation: heartbeat 1s infinite; /* Aplica a animação ao h1 */
-}
-
-
-p {
-    text-align: center;
-}
-
-.audio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
+/* Styles for the body element */
 body {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    color: #333;
-    font-family: Arial, sans-serif;
+    /* Background image and gradient */
+    background: url('https://images2.imgbox.com/03/6f/kYyB5toQ_o.png') left bottom/30% no-repeat, linear-gradient(to right, rgba(102, 0, 0, 1), rgba(255, 0, 0, 1));
+    color: #fff; /* Text color */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font family */
+    margin: 0; /* Remove default body margin */
 }
 
+/* Styles for the h1 element */
+h1 {
+    text-shadow: 2px 2px 5px #c30000; /* Text shadow for a decorative effect */
+    font-family: "Sofia", sans-serif; /* Specific font family */
+    font-size: 50px; /* Font size */
+    text-align: center; /* Center align text */
+    animation: heartbeat 1s infinite; /* Apply heartbeat animation */
+}
+
+/* Styles for the p element */
+p {
+    text-align: center; /* Center align text */
+    color: #fff; /* Text color */
+}
+
+/* Styles for the .audio-container class */
+.audio-container {
+    display: flex; /* Flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 20px; /* Top margin */
+}
+
+/* Styles for the container holding table and quote */
+.container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+}
+
+/* Styles for the table element */
 table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 50%;
+    margin: 20px auto; /* Margin and center the table */
+    border-collapse: collapse; /* Collapse table borders */
+    width: 50%; /* Set table width */
+    background-color: rgba(255, 255, 255, 0.3); /* White background with 30% opacity */
 }
 
+/* Styles for table header and data cells */
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+    border: 1px solid #ddd; /* Border for cells */
+    padding: 8px; /* Cell padding */
+    text-align: center; /* Center align text in cells */
 }
 
-tr:hover {
-    background-color: #f5f5f5;
-}
-
+/* Alternating background colors for table rows */
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgba(102, 0, 0, 0.5); /* Transparent red for even rows */
 }
 
-footer {
+tr:nth-child(odd) {
+    background-color: rgba(76, 0, 0, 0.5); /* Transparent red for odd rows */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: rgba(128, 0, 0, 0.7); /* Semi-transparent red on hover */
+}
+
+/* Styles for the quote container */
+.quote-container {
     text-align: center;
-    background-color: lightcoral;
-    color: black;
-    position: relative;
-    width: 100%;
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 20px; /* Adjust margin */
+}
+
+/* Styles for the quotation marks */
+.quote-container::before,
+.quote-container::after {
+    content: '\201C'; /* Unicode character for left double quotation mark */
+    font-size: 20px; /* Adjust the font size of the quotation marks */
+    margin-right: 5px; /* Adjust spacing */
+}
+
+.quote-container::after {
+    content: '\201D'; /* Unicode character for right double quotation mark */
+    margin-left: 2px; /* Adjust spacing */
+}
+
+
+/* Styles for the footer element */
+footer {
+    text-align: center; /* Center align text */
+    background-color: #b34747; /* Background color */
+    color: #fff; /* Text color */
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    padding: 5px 0; /* Padding */
 }
