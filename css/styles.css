@@ -7,7 +7,7 @@
         transform: scale(1.1);
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.1);
     }
 }
 
@@ -22,7 +22,7 @@ body {
 
 /* Styles for the h1 element */
 h1 {
-    text-shadow: 2px 2px 5px #c30000; /* Text shadow for a decorative effect */
+    text-shadow: 2px 2px 5px #FFFF00; /* Text shadow for a decorative effect */
     font-family: "Sofia", sans-serif; /* Specific font family */
     font-size: 50px; /* Font size */
     text-align: center; /* Center align text */
